@@ -12,7 +12,7 @@ You will need `Go` installed in your machine.
 
 See these [INSTALLATION DOCS](./INSTALLATIONS.md)
 
-### Install Gator
+### Install secure-code-checker
 
 You will install the cli program with Go.
 Run:
