@@ -18,5 +18,5 @@ You will install the cli program with Go.
 Run:
 
 ```bash
-go install github.com/agustin-carnevale/secure-code-checker@latest
+go install github.com/agustin-carnevale/firstpass@latest
 ```

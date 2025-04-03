@@ -8,7 +8,7 @@ import (
 )
 
 var rootCmd = &cobra.Command{
-	Use:   "codescanner",
+	Use:   "firstpass",
 	Short: "A CLI tool for scanning JavaScript/TypeScript repos for security threats.",
 }
 

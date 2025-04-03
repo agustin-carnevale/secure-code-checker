@@ -50,7 +50,7 @@ func scanFromDirectory(pathToDir string) {
 func scanFromRepository(repoUrl string) {
 	fmt.Printf("Scanning repository: %s\n", repoUrl)
 
-	tempDir := filepath.Join(os.TempDir(), "codescanner_repo")
+	tempDir := filepath.Join(os.TempDir(), "firstpass_repo")
 	os.RemoveAll(tempDir) // Clean up previous runs
 
 	_, err := git.PlainClone(tempDir, false, &git.CloneOptions{
