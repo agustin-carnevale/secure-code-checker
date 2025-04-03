@@ -1,4 +1,4 @@
-# FirstPass
+# FirstPass ![Github tests status badge](https://github.com/agustin-carnevale/firstpass/actions/workflows/ci.yml/badge.svg)
 
 This project is a very minimal/simple tool intended to help developers run very basic checks on a project they received from "untrusted" sources. The motivation for this project was initially based on the fact that many fake recruiters send these projects with malicious code to developers as part of a take home challege during the interviews process. Or also fake clients asking freelancers to work on the project, to modify something, etc.
 
