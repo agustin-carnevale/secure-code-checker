@@ -1,4 +1,4 @@
-# Secure-code-checker
+# FirstPass
 
 This project is a very minimal/simple tool intended to help developers run very basic checks on a project they received from "untrusted" sources. The motivation for this project was initially based on the fact that many fake recruiters send these projects with malicious code to developers as part of a take home challege during the interviews process. Or also fake clients asking freelancers to work on the project, to modify something, etc.
 
@@ -12,11 +12,16 @@ You will need `Go` installed in your machine.
 
 See these [INSTALLATION DOCS](./INSTALLATIONS.md)
 
-### Install secure-code-checker
+### Install firstpass
 
-You will install the cli program with Go.
-Run:
+You can now install the cli program with Go:
 
 ```bash
 go install github.com/agustin-carnevale/firstpass@latest
+```
+
+Print the version to check everything worked fine:
+
+```bash
+firstpass version
 ```

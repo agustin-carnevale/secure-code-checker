@@ -7,9 +7,19 @@ import (
 	"github.com/spf13/cobra"
 )
 
+const version = "1.0.0"
+
 var rootCmd = &cobra.Command{
 	Use:   "firstpass",
 	Short: "A CLI tool for scanning JavaScript/TypeScript repos for security threats.",
+}
+
+var versionCmd = &cobra.Command{
+	Use:   "version",
+	Short: "Print the version number of firstpass",
+	Run: func(cmd *cobra.Command, args []string) {
+		fmt.Printf("firstpass version %s\n", version)
+	},
 }
 
 func Execute() {
@@ -22,4 +32,5 @@ func Execute() {
 // Initialize commands
 func init() {
 	rootCmd.AddCommand(scanCmd)
+	rootCmd.AddCommand(versionCmd)
 }
