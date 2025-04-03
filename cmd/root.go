@@ -15,7 +15,7 @@ var rootCmd = &cobra.Command{
 }
 
 var versionCmd = &cobra.Command{
-	Use:   "version",
+	Use:   "print-version",
 	Short: "Print the version number of firstpass",
 	Run: func(cmd *cobra.Command, args []string) {
 		fmt.Printf("firstpass version %s\n", version)
