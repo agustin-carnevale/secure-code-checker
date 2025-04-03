@@ -6,6 +6,14 @@ This project is a very minimal/simple tool intended to help developers run very 
 
 This was just started and is a Work-In-Progress. Also any help or contributions, in code or ideas is very much welcome.
 
+## List of basic checks it should run:
+
+- [x] Basic js/ts files check for eval()
+- [x] ESlint security check
+- [ ] package.json/dependencies check
+- [ ] semgrep
+- [ ] other third-party tools
+
 ## Run locally
 
 You will need `Go` installed in your machine.
