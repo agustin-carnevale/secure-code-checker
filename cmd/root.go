@@ -7,7 +7,7 @@ import (
 	"github.com/spf13/cobra"
 )
 
-const version = "1.0.0"
+const version = "0.1.0"
 
 var rootCmd = &cobra.Command{
 	Use:   "firstpass",
@@ -15,7 +15,7 @@ var rootCmd = &cobra.Command{
 }
 
 var versionCmd = &cobra.Command{
-	Use:   "print-version",
+	Use:   "version",
 	Short: "Print the version number of firstpass",
 	Run: func(cmd *cobra.Command, args []string) {
 		fmt.Printf("firstpass version %s\n", version)
