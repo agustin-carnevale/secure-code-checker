@@ -51,9 +51,12 @@ func scanFromRepository(repoUrl string) {
 	fmt.Printf("Scanning repository: %s\n", repoUrl)
 
 	tempDir := filepath.Join(os.TempDir(), "firstpass_repo")
-	os.RemoveAll(tempDir) // Clean up previous runs
+	err := os.RemoveAll(tempDir) // Clean up previous runs
+	if err != nil {
+		fmt.Printf("Error cleaning up previous runs: %v\n", err)
+	}
 
-	_, err := git.PlainClone(tempDir, false, &git.CloneOptions{
+	_, err = git.PlainClone(tempDir, false, &git.CloneOptions{
 		URL:      repoUrl,
 		Depth:    1,   // Shallow clone for speed
 		Progress: nil, //os.Stdout,
