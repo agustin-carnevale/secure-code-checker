@@ -1,4 +1,4 @@
-module github.com/agustin-carnevale/secure-code-checker
+module github.com/agustin-carnevale/firstpass
 
 go 1.23.4
 

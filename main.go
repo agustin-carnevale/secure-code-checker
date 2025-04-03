@@ -1,13 +1,9 @@
 package main
 
 import (
-	"github.com/agustin-carnevale/secure-code-checker/cmd"
+	"github.com/agustin-carnevale/firstpass/cmd"
 )
 
 func main() {
 	cmd.Execute()
 }
-
-// func init() {
-// 	fmt.Println("Running this init before main")
-// }

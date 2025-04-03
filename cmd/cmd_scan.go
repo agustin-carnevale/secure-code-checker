@@ -6,7 +6,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/agustin-carnevale/secure-code-checker/internal/scan"
+	"github.com/agustin-carnevale/firstpass/internal/scan"
 	git "github.com/go-git/go-git/v5"
 	"github.com/spf13/cobra"
 )
