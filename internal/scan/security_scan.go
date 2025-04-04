@@ -38,7 +38,9 @@ func basicFilesScan(rootDir string) {
 }
 
 func scanFileAST(filePath string) {
-	content, err := os.ReadFile(filePath)
+	// we know the file path is secure as it comes from filepath.Walk
+	// traversing the files in our rootDir
+	content, err := os.ReadFile(filePath) // #nosec G304
 	if err != nil {
 		fmt.Printf("Error reading file %s: %v\n", filePath, err)
 		return
