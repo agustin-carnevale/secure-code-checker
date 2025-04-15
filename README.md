@@ -33,3 +33,17 @@ Print the version to check everything worked fine:
 ```bash
 firstpass version
 ```
+
+### Usage
+
+From a remote repository
+
+```bash
+firstpass scan -r <repo_url>
+```
+
+For local dir
+
+```bash
+firstpass scan -d <path_to_dir>
+```
